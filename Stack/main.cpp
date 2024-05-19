@@ -23,7 +23,7 @@ int main()
     }
     catch (const exception& e) 
     {
-        cerr << "Íàéäåíî èñêëþ÷åíèå: " << e.what() << endl;
+        cerr << "Найдено исключение: " << e.what() << endl;
     }
 
     try 
