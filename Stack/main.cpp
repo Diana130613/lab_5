@@ -13,17 +13,17 @@ int main()
         intStack.push(2);
         intStack.push(3);
 
-        cout << "Âåðøèíà intStack: " << intStack.top() << endl;
+        cout << "Ð’ÐµÑ€ÑˆÐ¸Ð½Ð° intStack: " << intStack.top() << endl;
 
         intStack.pop();
         intStack.pop();
         intStack.pop();
-        intStack.pop();  // óäàëåíèå íåñóùåñòâóþùåãî ýëåìåíòà, ÷òîáû âûçâàòü èñêëþ÷åíèå
+        intStack.pop();  // ÑƒÐ´Ð°Ð»ÐµÐ½Ð¸Ðµ Ð½ÐµÑÑƒÑ‰ÐµÑÑ‚Ð²ÑƒÑŽÑ‰ÐµÐ³Ð¾ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð°, Ñ‡Ñ‚Ð¾Ð±Ñ‹ Ð²Ñ‹Ð·Ð²Ð°Ñ‚ÑŒ Ð¸ÑÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ðµ
 
     }
     catch (const exception& e) 
     {
-        std::cerr << "Íàéäåíî èñêëþ÷åíèå: " << e.what() << std::endl;
+        cerr << "ÃÃ Ã©Ã¤Ã¥Ã­Ã® Ã¨Ã±ÃªÃ«Ã¾Ã·Ã¥Ã­Ã¨Ã¥: " << e.what() << endl;
     }
 
     try 
@@ -31,13 +31,13 @@ int main()
         Stack<double> doubleStack;
         doubleStack.push(3.14);
 
-        cout << "Âåðøèíà doubleStack: " << doubleStack.top() << endl;
+        cout << "ÐÐ°Ð¹Ð´ÐµÐ½Ð¾ Ð¸ÑÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ðµ: " << doubleStack.top() << endl;
         doubleStack.pop();
 
     }
     catch (const exception& e) 
     {
-        cerr << "Íàéäåíî èñêëþ÷åíèå: " << e.what() << endl;
+        cerr << "ÐÐ°Ð¹Ð´ÐµÐ½Ð¾ Ð¸ÑÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ðµ: " << e.what() << endl;
     }
 
     try {
@@ -47,14 +47,14 @@ int main()
         stringStack.push("!");
 
         while (!stringStack.empty()) {
-            cout << "Âåðøèíà stringStack: " << stringStack.top() << endl;
+            cout << "Ð’ÐµÑ€ÑˆÐ¸Ð½Ð° doubleStack: " << stringStack.top() << endl;
             stringStack.pop();
         }
-        stringStack.pop();  // óäàëåíèå íåñóùåñòâóþùåãî ýëåìåíòà, ÷òîáû âûçâàòü èñêëþ÷åíèå
+        stringStack.pop();  // ÑƒÐ´Ð°Ð»ÐµÐ½Ð¸Ðµ Ð½ÐµÑÑƒÑ‰ÐµÑÑ‚Ð²ÑƒÑŽÑ‰ÐµÐ³Ð¾ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð°, Ñ‡Ñ‚Ð¾Ð±Ñ‹ Ð²Ñ‹Ð·Ð²Ð°Ñ‚ÑŒ Ð¸ÑÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ðµ
     }
     catch (const exception& e) 
     {
-        cerr << "Íàéäåíî èñêëþ÷åíèå: " << e.what() << endl;
+        cerr << "ÐÐ°Ð¹Ð´ÐµÐ½Ð¾ Ð¸ÑÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ðµ: " << e.what() << endl;
     }
 
     return 0;
