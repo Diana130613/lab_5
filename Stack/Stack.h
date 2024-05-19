@@ -16,7 +16,7 @@ public:
     void pop() {
         if (data.empty()) 
         {
-            throw out_of_range("stack пуст: удаление невозможно.");
+            throw out_of_range("stack РїСѓСЃС‚: СѓРґР°Р»РµРЅРёРµ РЅРµРІРѕР·РјРѕР¶РЅРѕ.");
         }
         data.pop_back();
     }
@@ -25,7 +25,7 @@ public:
     {
         if (data.empty()) 
         {
-            throw out_of_range("stack пуст: удаление невозможно.");
+            throw out_of_range("stack РїСѓСЃС‚: СѓРґР°Р»РµРЅРёРµ РЅРµРІРѕР·РјРѕР¶РЅРѕ.");
         }
         return data.back();
     }
